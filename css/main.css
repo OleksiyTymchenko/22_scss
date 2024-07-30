@@ -239,7 +239,7 @@ h4 {
   top: 0;
 }
 .section .slider_list .slider_list__item .slider_list__photo .slider_list__photo__box .slider_list__photo__box__image {
-  background: url("../../img/section/user_photo.jpg") center/100% 100% no-repeat;
+  background: url(".././img/section/user_photo.jpg") center/100% 100% no-repeat;
   background-size: cover;
   width: 400px;
   height: 400px;
