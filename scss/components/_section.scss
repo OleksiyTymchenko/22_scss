@@ -1,0 +1,183 @@
+.section {
+  padding: 121px 0 122px;
+  text-align: center;
+  h4 {
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+  }
+  .flower:before {
+    content: "";
+    display: block;
+    width: 210px;
+    height: 1px;
+    background-color: #ffcc00;
+    margin-bottom: 10px;
+    // position: absolute;
+    // // right: 0;
+    // left: 0;
+    position: relative;
+    top: 20px;
+  }
+  .flower:after {
+    content: "";
+    display: block;
+    width: 210px;
+    height: 1px;
+    background-color: #ffcc00;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 51px;
+    left: 240px;
+  }
+  .flower {
+    // border-top: 1px solid #FFCC00;
+    // margin-bottom: 10px;
+    position: relative;
+    width: 450px;
+    margin: auto;
+  }
+  .slider_list {
+    .slider_list__item {
+      display: flex;
+      justify-content: space-between;
+
+      .slider_list__photo {
+        border-right: 1px solid #ffcc00;
+        padding-right: 85px;
+        position: relative;
+
+        .line-big {
+          content: "|";
+          width: 1px;
+          height: 560px;
+          right: 0;
+          top: 0;
+          background-color: #ffcc00;
+          position: absolute;
+        }
+        .slider_list__photo__box {
+          position: relative;
+          padding: 15px;
+          .line {
+            content: "-";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: #ffcc00;
+          }
+          .line:nth-child(1) {
+            left: 0;
+            top: 0;
+          }
+          .line:nth-child(2) {
+            right: 0;
+            top: 0;
+          }
+          .line:nth-child(3) {
+            right: 0;
+            bottom: 0;
+          }
+          .line:nth-child(4) {
+            left: 0;
+            bottom: 0;
+          }
+          .line:nth-child(5) {
+            content: "|";
+            width: 1px;
+            height: 100px;
+            left: 0;
+            bottom: 0;
+          }
+          .line:nth-child(6) {
+            content: "|";
+            width: 1px;
+            height: 100px;
+            right: 0;
+            bottom: 0;
+          }
+          .line:nth-child(7) {
+            content: "|";
+            width: 1px;
+            height: 100px;
+            right: 0;
+            top: 0;
+          }
+          .line:nth-child(8) {
+            width: 1px;
+            height: 100px;
+            left: 0;
+            top: 0;
+          }
+          .slider_list__photo__box__image {
+            background: url("../../img/section/user_photo.jpg") center / 100%
+              100% no-repeat;
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+          }
+        }
+      }
+
+      .slider_list__text {
+        padding-left: 85px;
+
+        .teammate_name::after {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background-color: #ffcc00;
+          margin: 30px auto;
+        }
+        .position{
+            margin-bottom: 30px;
+        }
+        .social-list{
+            display: flex;
+            width: 135px;
+            margin: auto;
+            justify-content: space-between;
+
+            .social-list__item{
+              svg{
+                width: 30px;
+                height: 30px;
+                margin-bottom: 49px;
+                use{
+
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .section {
+    .flower:before {
+      width: 50px;
+      top: 22px;
+      right: -30px;
+    }
+    .flower:after {
+      width: 50px;
+      left: 120px;
+    }
+    .flower {
+      position: relative;
+      width: 200px;
+    }
+  }
+}
