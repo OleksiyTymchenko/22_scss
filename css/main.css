@@ -172,7 +172,6 @@ h4 {
   justify-content: space-between;
 }
 .section .slider_list .slider_list__item .slider_list__photo {
-  border-right: 1px solid #ffcc00;
   padding-right: 85px;
   position: relative;
 }
@@ -181,7 +180,7 @@ h4 {
   width: 1px;
   height: 560px;
   right: 0;
-  top: 0;
+  top: -20px;
   background-color: #ffcc00;
   position: absolute;
 }
@@ -265,11 +264,54 @@ h4 {
   margin: auto;
   justify-content: space-between;
 }
+.section .slider_list .slider_list__item .slider_list__text .social-list .social-list__item {
+  margin-right: 5px;
+}
 .section .slider_list .slider_list__item .slider_list__text .social-list .social-list__item svg {
   width: 30px;
   height: 30px;
   margin-bottom: 49px;
 }
+.section .slider_list .slider_list__item .slider_list__text .social-list .social-list__item:last-child {
+  margin-right: 0;
+}
+.section .slider_list .slider_list__item .slider_list__text p {
+  margin-bottom: 20px;
+}
+.section .slider_list .slider_list__item .slider_list__text .slider-dots {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.section .slider_list .slider_list__item .slider_list__text .slider-dots .slider-dots__item {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 4px;
+  background-color: #ffcc00;
+}
+.section .slider_list .slider_list__item .slider_list__text .slider-dots .slider-dots__item:nth-child(2) {
+  width: 20px;
+}
+.section .slider_list .slider_list__item .slider_list__text .profile-button {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid #ffcc00;
+  color: #666666;
+  font-family: "Open sans", sans-serif;
+}
+.section .slider_list .slider_list__item .slider_list__text .profile-button:hover {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid #ffcc00;
+  background-color: #ffcc00;
+  color: #fff;
+  color: #666666;
+  font-family: "Open sans", sans-serif;
+}
+
 @media (min-width: 200px) and (max-width: 500px) {
   .section .flower:before {
     width: 50px;
@@ -283,6 +325,25 @@ h4 {
   .section .flower {
     position: relative;
     width: 200px;
+  }
+  .section .slider_list .slider_list__item .slider_list__photo .slider_list__photo__box .slider_list__photo__box__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 200px) and (max-width: 1070px) {
+  .section .slider_list .slider_list__item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section .slider_list .slider_list__item .slider_list__photo {
+    padding: 0 40px;
+  }
+  .section .slider_list .slider_list__item .slider_list__photo .line-big {
+    display: none;
+  }
+  .section .slider_list .slider_list__item .slider_list__text {
+    padding: 0 40px;
   }
 }
 
